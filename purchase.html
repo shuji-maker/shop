@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ご購入ページ - Green Life</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      margin: 0;
+      background-color: #f1f8e9;
+      color: #333;
+    }
+
+    header {
+      background-color: #aed581;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #33691e;
+    }
+
+    .content {
+      padding: 2rem;
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .content h2 {
+      color: #558b2f;
+    }
+
+    .content form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content label {
+      margin-top: 1rem;
+    }
+
+    .content input,
+    .content select {
+      padding: 0.5rem;
+      font-size: 1rem;
+      margin-top: 0.25rem;
+    }
+
+    .content button {
+      margin-top: 2rem;
+      padding: 0.75rem;
+      font-size: 1rem;
+      background-color: #7cb342;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .content button:hover {
+      background-color: #689f38;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #33691e;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ご購入ページ</h1>
+  </header>
+
+  <div class="content">
+    <h2>商品情報</h2>
+    <form>
+      <label for="product">商品を選択:</label>
+      <select id="product" name="product">
+        <option value="monstera">モンステラ</option>
+        <option value="sansevieria">サンスベリア</option>
+        <option value="succulents">多肉植物セット</option>
+      </select>
+
+      <label for="name">お名前:</label>
+      <input type="text" id="name" name="name">
+
+      <label for="email">メールアドレス:</label>
+      <input type="email" id="email" name="email">
+
+      <label for="address">お届け先住所:</label>
+      <input type="text" id="address" name="address">
+
+      <button type="submit">購入する</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 Green Life - All rights reserved.
+  </footer>
+
+</body>
+</html>
